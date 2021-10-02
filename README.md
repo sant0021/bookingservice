@@ -32,91 +32,17 @@ We would like you to enhance the existing project and see you complete the follo
 - Implement idempotency logic to avoid duplicate resource creation.*
 
 
-## Input/Output 
-Create New Bookings:
-Url: http://localhost:8080/v1/bfs/booking
-Request body:   
-{
-    "id": 1,
-    "first_name": "first9",
-    "last_name": "last9",
-    "date_of_birth": "28-05-1998",
-    "checkin": "27-03-2021",
-    "checkout": "27-03-2021",
-    "total_price": 35263.0,
-    "deposit": 12187.0,
-    "address": {
-        "line1": "dgashj",
-        "line2": "dyuasd",
-        "city": "Bangalore",
-        "state": "Karnataka",
-        "zipcode": "560103"
-    }
-}
-   
-Response:
-    {
-        "id": 1,
-        "first_name": "first9",
-        "last_name": "last9",
-        "date_of_birth": "28-05-1998",
-        "checkin": "27-03-2021",
-        "checkout": "27-03-2021",
-        "total_price": 35263.0,
-        "deposit": 12187.0,
-        "address": {
-            "line1": "dgashj",
-            "line2": "dyuasd",
-            "city": "Bangalore",
-            "state": "Karnataka",
-            "zipcode": "560103"
-        }
-    }
-    
-    GetAllBookings:
-    Url: http://localhost:8080/v1/bfs/getAllBookings
-    [
+    ## Input/Output 
+        Create New Bookings:
+        Url: http://localhost:8080/v1/bfs/booking
+        Request body:   
         {
             "id": 1,
-            "first_name": "first1",
-            "last_name": "last1",
-            "date_of_birth": "28-00-1998",
-            "checkin": "27-00-2021",
-            "checkout": "27-00-2021",
-            "total_price": 35263.0,
-            "deposit": 12187.0,
-            "address": {
-                "line1": "dgashj",
-                "line2": "dyuasd",
-                "city": "Bangalore",
-                "state": "Karnataka",
-                "zipcode": "560103"
-            }
-        },
-        {
-            "id": 2,
-            "first_name": "first2",
-            "last_name": "last2",
-            "date_of_birth": "28-00-1998",
-            "checkin": "27-00-2021",
-            "checkout": "27-00-2021",
-            "total_price": 35263.0,
-            "deposit": 12187.0,
-            "address": {
-                "line1": "dgashj",
-                "line2": "dyuasd",
-                "city": "Bangalore",
-                "state": "Karnataka",
-                "zipcode": "560103"
-            }
-        },
-        {
-            "id": 3,
-            "first_name": "first3",
-            "last_name": "last3",
-            "date_of_birth": "28-00-1998",
-            "checkin": "27-00-2021",
-            "checkout": "27-00-2021",
+            "first_name": "first9",
+            "last_name": "last9",
+            "date_of_birth": "28-05-1998",
+            "checkin": "27-03-2021",
+            "checkout": "27-03-2021",
             "total_price": 35263.0,
             "deposit": 12187.0,
             "address": {
@@ -127,7 +53,81 @@ Response:
                 "zipcode": "560103"
             }
         }
-]
+
+        Response:
+            {
+                "id": 1,
+                "first_name": "first9",
+                "last_name": "last9",
+                "date_of_birth": "28-05-1998",
+                "checkin": "27-03-2021",
+                "checkout": "27-03-2021",
+                "total_price": 35263.0,
+                "deposit": 12187.0,
+                "address": {
+                    "line1": "dgashj",
+                    "line2": "dyuasd",
+                    "city": "Bangalore",
+                    "state": "Karnataka",
+                    "zipcode": "560103"
+                }
+            }
+    
+        GetAllBookings:
+        Url: http://localhost:8080/v1/bfs/getAllBookings
+        [
+            {
+                "id": 1,
+                "first_name": "first1",
+                "last_name": "last1",
+                "date_of_birth": "28-00-1998",
+                "checkin": "27-00-2021",
+                "checkout": "27-00-2021",
+                "total_price": 35263.0,
+                "deposit": 12187.0,
+                "address": {
+                    "line1": "dgashj",
+                    "line2": "dyuasd",
+                    "city": "Bangalore",
+                    "state": "Karnataka",
+                    "zipcode": "560103"
+                }
+            },
+            {
+                "id": 2,
+                "first_name": "first2",
+                "last_name": "last2",
+                "date_of_birth": "28-00-1998",
+                "checkin": "27-00-2021",
+                "checkout": "27-00-2021",
+                "total_price": 35263.0,
+                "deposit": 12187.0,
+                "address": {
+                    "line1": "dgashj",
+                    "line2": "dyuasd",
+                    "city": "Bangalore",
+                    "state": "Karnataka",
+                    "zipcode": "560103"
+                }
+            },
+            {
+                "id": 3,
+                "first_name": "first3",
+                "last_name": "last3",
+                "date_of_birth": "28-00-1998",
+                "checkin": "27-00-2021",
+                "checkout": "27-00-2021",
+                "total_price": 35263.0,
+                "deposit": 12187.0,
+                "address": {
+                    "line1": "dgashj",
+                    "line2": "dyuasd",
+                    "city": "Bangalore",
+                    "state": "Karnataka",
+                    "zipcode": "560103"
+                }
+            }
+    ]
 
 
 
